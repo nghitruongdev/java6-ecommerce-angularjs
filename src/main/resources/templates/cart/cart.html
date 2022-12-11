@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{/layout/index::dynamic(~{::main})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<main>
+    <div class="col-10 mx-auto" th:fragment="shopping-cart">
+        <h2>Cart Overview</h2>
+        <div ng-if="cart.numberOfItems == 0" class="card">
+            <img src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                 alt="" class="img-fluid card-img-top border rounded-2">
+        </div>
+        <div ng-if="cart.numberOfItems > 0" class="card">
+            <div class="card-body">
+                <table class="table">
+                    <thead class="text-center">
+                    <tr>
+                        <th scope="col"><input type="checkbox" name="" id=""
+                                               onchange="angular.element(this).scope().selectAll(this.checked)"></th>
+                        <th scope="col" style="width: 100px;">Image</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="(key, prod) in cart.values track by prod.id">
+                        <td><input type="checkbox" name="" id={{key}} ng-model="checkboxes[key].isSelected" ng-checked="checkboxes[key].isSelected"></td>
+                        <td><a href="{{'/products/' + prod.id}}" class="nav-link"><img ng-src="{{prod.image}}" class="img-fluid" alt=""></a></td>
+                        <td><a href="{{'/products/' + prod.id}}" class="nav-link">{{prod.name}}</a></td>
+                        <td>{{prod.price | currency: 'VNĐ '}}</td>
+                        <td>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" ng-click="changeQuantity(prod, false)"
+                                        class="btn btn-outline-primary px-3"> -
+                                </button>
+                                <span class="mx-3 align-self-center">{{prod.quantity}}</span>
+                                <button type="button" ng-click="changeQuantity(prod, true)"
+                                        class="btn btn-outline-primary px-3"> +
+                                </button>
+                            </div>
+                        </td>
+                        <td class="fw-bold text-center">{{prod.price * prod.quantity | number: 2}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button ng-if="isCheckboxSelected()" ng-click="removeItem()" class="btn btn-danger px-3 py-1">Delete</button>
+            </div>
+            <div class="card-footer d-flex justify-content-between py-2 align-item-center">
+                <span class="lead fw-bold p-0">Total: <span>{{cart.totalAmount | currency: 'VNĐ '}}</span></span>
+                <a class="btn btn-success px-3" href="/cart/checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

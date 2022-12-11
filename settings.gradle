@@ -1,0 +1,6 @@
+rootProject.name = 'java6-asm'
+include 'common'
+include 'upload-service'
+include 'rest'
+include 'eureka-server'
+

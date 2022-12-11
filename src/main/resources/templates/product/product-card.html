@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="card position-relative" style="width: 18rem;"
+     th:fragment="product-card(prod)">
+    <div class="position-absolute top-0 end-0">
+     <span th:if="${prod.quantity == 0}"
+           class="badge bg-danger  m-4 py-2">OUT OF STOCK</span>
+    </div>
+    <div>
+        <div class="text-end">
+            <img th:if="${prod.images.size() >0}" th:src="${prod.images.get(0).url}" class="card-img-top"
+                 th:attr="alt=${prod.name}">
+            <img th:if="${prod.images.size() == 0}" src="https://picsum.photos/200" class="card-img-top" th:attr="alt=${prod.name}">
+        </div>
+        <div class="card-body">
+            <h6 class="card-title text-truncate" th:text="${prod.name}"></h6>
+            <p class="card-text">Quantity: <span th:text="${prod.quantity}"></span></p>
+            <div class="text-end">
+                <a th:href="@{|/products/${prod.id}|}"
+                   class="btn btn-warning">View more</a>
+                <button th:attr="ng-click=@{|addToCart(${prod.id})|}" th:disabled="${prod.quantity == 0}"
+                        class="btn btn-success">Add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

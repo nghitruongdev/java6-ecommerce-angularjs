@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<p th:remove="all">Hello this is details page</p>
+<h2 th:utext="'Product Controller'"></h2>
+<main>
+    <div th:fragment="main"
+             th:if="${product != null}"
+             th:object="${product}">
+        <p th:text="*{name}"></p>
+        <div>
+            <h3>SẢN PHẨM CÙNG LOẠI</h3>
+            <div th:each="prod, state: ${products}" th:object="${prod}">
+                <p th:text="*{name}"></p>
+                <p th:text="*{quantity}"></p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

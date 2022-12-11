@@ -1,0 +1,298 @@
+{
+    "_embedded": {
+        "users": [
+            {
+                "name": "Hồ Đỗ Tuân Tâm",
+                "address": null,
+                "username": "vntruong99",
+                "email": null,
+                "phone": "0164 099 0516",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "CUSTOMER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/1"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/1{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/1/roles"
+                    }
+                }
+            },
+            {
+                "name": "Hoàng Hoàng",
+                "address": null,
+                "username": "vũ.tiến",
+                "email": null,
+                "phone": "0167 891 3587",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "USER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/2"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/2{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/2/roles"
+                    }
+                }
+            },
+            {
+                "name": "Phùng Phùng Vân Đức",
+                "address": null,
+                "username": "phạm.hữu",
+                "email": null,
+                "phone": "0164 540 5287",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "STAFF"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/3"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/3{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/3/roles"
+                    }
+                }
+            },
+            {
+                "name": "Đào Lê Dương",
+                "address": null,
+                "username": "hồ.thị",
+                "email": null,
+                "phone": "0166 580 5104",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "USER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/4"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/4{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/4/roles"
+                    }
+                }
+            },
+            {
+                "name": "Đoàn Dương Lý",
+                "address": null,
+                "username": "đinh.tuân",
+                "email": null,
+                "phone": "0168 541 1741",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "ADMIN"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/5"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/5{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/5/roles"
+                    }
+                }
+            },
+            {
+                "name": "Phạm Trương Sinh Thảo",
+                "address": null,
+                "username": "dương.thị",
+                "email": null,
+                "phone": "0186 461 9878",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "CUSTOMER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/6"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/6{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/6/roles"
+                    }
+                }
+            },
+            {
+                "name": "Hoàng Hoàng",
+                "address": null,
+                "username": "lý.thảo",
+                "email": null,
+                "phone": "0163 448 8300",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "USER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/7"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/7{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/7/roles"
+                    }
+                }
+            },
+            {
+                "name": "Mai Long Hữu",
+                "address": null,
+                "username": "dương.minh",
+                "email": null,
+                "phone": "0125 363 0799",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "CUSTOMER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/8"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/8{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/8/roles"
+                    }
+                }
+            },
+            {
+                "name": "Phan Trinh",
+                "address": null,
+                "username": "lâm.hải",
+                "email": null,
+                "phone": "0199 381 4347",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "STAFF"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/9"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/9{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/9/roles"
+                    }
+                }
+            },
+            {
+                "name": "Trương Dung",
+                "address": null,
+                "username": "dương.tăng",
+                "email": null,
+                "phone": "0199 087 8118",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "USER"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/10"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/10{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/10/roles"
+                    }
+                }
+            },
+            {
+                "name": "Trương Sa Lê",
+                "address": null,
+                "username": "trịnh.vinh",
+                "email": null,
+                "phone": "0887 862 853",
+                "avatar": null,
+                "roles": [
+                    {
+                        "name": "STAFF"
+                    }
+                ],
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/users/11"
+                    },
+                    "user": {
+                        "href": "http://localhost:8080/api/v1/users/11{?projection}",
+                        "templated": true
+                    },
+                    "roles": {
+                        "href": "http://localhost:8080/api/v1/users/11/roles"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/api/v1/users?projection=withRoles"
+        },
+        "profile": {
+            "href": "http://localhost:8080/api/v1/profile/users"
+        },
+        "search": {
+            "href": "http://localhost:8080/api/v1/users/search"
+        }
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 11,
+        "totalPages": 1,
+        "number": 0
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "_embedded": {
+        "categories": [
+            {
+                "name": "Computers & Sports",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/categories/1"
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/categories/1"
+                    }
+                }
+            },
+            {
+                "name": "Baby, Computers & Movies",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/categories/2"
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/categories/2"
+                    }
+                }
+            },
+            {
+                "name": "Books",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/categories/3"
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/categories/3"
+                    }
+                }
+            },
+            {
+                "name": "Jewelry",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/categories/4"
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/categories/4"
+                    }
+                }
+            },
+            {
+                "name": "Toys",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/categories/5"
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/categories/5"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/api/v1/categories"
+        },
+        "profile": {
+            "href": "http://localhost:8080/api/v1/profile/categories"
+        }
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 5,
+        "totalPages": 1,
+        "number": 0
+    }
+}

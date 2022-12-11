@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{/layout/index::dynamic(~{::main})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<main>
+    <div class="mx-auto" th:fragment="shopping-cart">
+        <h2 class="text-center"> Cart Overview</h2>
+        <div ng-if="cart.numberOfItems == 0" class="card">
+            <img src="https://rtworkspace.com/wp-content/plugins/rtworkspace-ecommerce-wp-plugin/assets/img/empty-cart.png"
+                 alt="" class="img-fluid card-img-top border rounded-2">
+        </div>
+        <div ng-if="cart.numberOfItems > 0" class="card">
+            <div class="container">
+                <div class="row mt-3" ng-repeat="prod in cart.values">
+                    <div class="col-4">
+                        <img ng-src="{{prod.image}}" alt="" style="width: 100px;">
+                    </div>
+                    <div class="col-7 ms-3">
+                        <p>{{prod.name}}</p>
+                        <p><span class="text-muted">Price: </span><span>{{prod.price | number: 0}}</span></p>
+                        <p><span class="text-muted">Quantity: </span><span>{{prod.quantity | number: 0}}</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center mb-3">
+                    <span class="lead fw-bold p-0">Total: <span>{{cart.totalAmount | currency: 'VNĐ '}}</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

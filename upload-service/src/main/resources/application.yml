@@ -1,0 +1,15 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: upload-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/java6_asm
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+imagekit:
+  private-key: private_lSllqDlunGjQeknG6GPTSk38ucM=
+  upload-url: https://upload.imagekit.io/api/v1/files/upload

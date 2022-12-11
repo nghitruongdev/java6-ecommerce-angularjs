@@ -1,0 +1,463 @@
+{
+    "_embedded": {
+        "products": [
+            {
+                "name": "Ergonomic Cotton Bag",
+                "id": 1,
+                "quantity": 16,
+                "category": {
+                    "name": "Electronics"
+                },
+                "price": 95132.15100636479,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/1"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/1{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/1/category"
+                    }
+                }
+            },
+            {
+                "name": "Mediocre Paper Clock",
+                "id": 2,
+                "quantity": 34,
+                "category": {
+                    "name": "Electronics"
+                },
+                "price": 63302.30640303692,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/2"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/2{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/2/category"
+                    }
+                }
+            },
+            {
+                "name": "Lightweight Rubber Lamp",
+                "id": 3,
+                "quantity": 27,
+                "category": {
+                    "name": "Toys"
+                },
+                "price": 78721.58021655768,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/3"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/3{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/3/category"
+                    }
+                }
+            },
+            {
+                "name": "Ergonomic Iron Bottle",
+                "id": 4,
+                "quantity": 93,
+                "category": {
+                    "name": "Beauty, Grocery & Kids"
+                },
+                "price": 70978.81389324961,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/4"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/4{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/4/category"
+                    }
+                }
+            },
+            {
+                "name": "Awesome Wool Lamp",
+                "id": 5,
+                "quantity": 92,
+                "category": {
+                    "name": "Automotive, Electronics & Music"
+                },
+                "price": 87436.49886279463,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/5"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/5{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/5/category"
+                    }
+                }
+            },
+            {
+                "name": "Synergistic Wooden Bottle",
+                "id": 6,
+                "quantity": 86,
+                "category": {
+                    "name": "Beauty, Grocery & Kids"
+                },
+                "price": 75006.63116267115,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/6"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/6{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/6/category"
+                    }
+                }
+            },
+            {
+                "name": "Enormous Granite Car",
+                "id": 7,
+                "quantity": 17,
+                "category": {
+                    "name": "Beauty, Grocery & Kids"
+                },
+                "price": 93679.13850961697,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/7"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/7{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/7/category"
+                    }
+                }
+            },
+            {
+                "name": "Mediocre Marble Lamp",
+                "id": 8,
+                "quantity": 47,
+                "category": {
+                    "name": "Beauty"
+                },
+                "price": 71747.27378481788,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/8"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/8{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/8/category"
+                    }
+                }
+            },
+            {
+                "name": "Gorgeous Plastic Knife",
+                "id": 9,
+                "quantity": 95,
+                "category": {
+                    "name": "Beauty, Grocery & Kids"
+                },
+                "price": 91544.96484338786,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/9"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/9{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/9/category"
+                    }
+                }
+            },
+            {
+                "name": "Synergistic Silk Pants",
+                "id": 10,
+                "quantity": 1,
+                "category": {
+                    "name": "Toys"
+                },
+                "price": 67879.3681480547,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/10"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/10{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/10/category"
+                    }
+                }
+            },
+            {
+                "name": "Small Steel Keyboard",
+                "id": 11,
+                "quantity": 5,
+                "category": {
+                    "name": "Toys"
+                },
+                "price": 94764.45877979884,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/11"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/11{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/11/category"
+                    }
+                }
+            },
+            {
+                "name": "Mediocre Plastic Computer",
+                "id": 12,
+                "quantity": 62,
+                "category": {
+                    "name": "Electronics"
+                },
+                "price": 51501.29071580318,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/12"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/12{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/12/category"
+                    }
+                }
+            },
+            {
+                "name": "Fantastic Silk Pants",
+                "id": 13,
+                "quantity": 65,
+                "category": {
+                    "name": "Beauty"
+                },
+                "price": 67476.70132911019,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/13"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/13{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/13/category"
+                    }
+                }
+            },
+            {
+                "name": "Practical Marble Hat",
+                "id": 14,
+                "quantity": 63,
+                "category": {
+                    "name": "Beauty"
+                },
+                "price": 78540.13466824562,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/14"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/14{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/14/category"
+                    }
+                }
+            },
+            {
+                "name": "Intelligent Linen Bench",
+                "id": 15,
+                "quantity": 67,
+                "category": {
+                    "name": "Beauty"
+                },
+                "price": 52649.531066611926,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/15"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/15{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/15/category"
+                    }
+                }
+            },
+            {
+                "name": "Aerodynamic Wool Pants",
+                "id": 16,
+                "quantity": 66,
+                "category": {
+                    "name": "Electronics"
+                },
+                "price": 71239.77419176321,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/16"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/16{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/16/category"
+                    }
+                }
+            },
+            {
+                "name": "Small Aluminum Bag",
+                "id": 17,
+                "quantity": 46,
+                "category": {
+                    "name": "Beauty, Grocery & Kids"
+                },
+                "price": 56955.17206327,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/17"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/17{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/17/category"
+                    }
+                }
+            },
+            {
+                "name": "Mediocre Wooden Bag",
+                "id": 18,
+                "quantity": 57,
+                "category": {
+                    "name": "Electronics"
+                },
+                "price": 60901.18333831284,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/18"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/18{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/18/category"
+                    }
+                }
+            },
+            {
+                "name": "Fantastic Paper Knife",
+                "id": 19,
+                "quantity": 22,
+                "category": {
+                    "name": "Toys"
+                },
+                "price": 90216.8694068327,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/19"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/19{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/19/category"
+                    }
+                }
+            },
+            {
+                "name": "Sleek Wooden Wallet",
+                "id": 20,
+                "quantity": 37,
+                "category": {
+                    "name": "Electronics"
+                },
+                "price": 62761.04877211012,
+                "image": "https://picsum.photos/200",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/products/20"
+                    },
+                    "product": {
+                        "href": "http://localhost:8080/api/v1/products/20{?projection}",
+                        "templated": true
+                    },
+                    "category": {
+                        "href": "http://localhost:8080/api/v1/products/20/category"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/api/v1/products?projection=withCat"
+        },
+        "profile": {
+            "href": "http://localhost:8080/api/v1/profile/products"
+        },
+        "search": {
+            "href": "http://localhost:8080/api/v1/products/search"
+        }
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 20,
+        "totalPages": 1,
+        "number": 0
+    }
+}

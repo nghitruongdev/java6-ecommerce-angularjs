@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <link
+            rel="stylesheet"
+            href="/assets/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script
+            defer
+            src="/assets/node_modules/angular/angular.min.js"></script>
+</head>
+
+<body>
+<div
+        class="container"
+        th:fragment="category">
+    <h3>Categories</h3>
+    <ul class="list-group container">
+        <li th:each="cate:${categories}"
+            class="list-group-item d-flex justify-content-between align-items-center">
+            <a th:href="@{|/products?categoryId=${cate.id}|}" class="nav-link">
+                <span th:text="${cate.name}" class="fw-bold"></span>
+                <span class="badge bg-primary rounded-pill" th:text="${cate.numberOfProducts}"></span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

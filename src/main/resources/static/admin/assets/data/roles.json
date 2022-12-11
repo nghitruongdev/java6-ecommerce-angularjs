@@ -1,0 +1,58 @@
+{
+    "_embedded": {
+        "roles": [
+            {
+                "name": "ADMIN",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/roles/1"
+                    },
+                    "role": {
+                        "href": "http://localhost:8080/api/v1/roles/1"
+                    }
+                }
+            },
+            {
+                "name": "CUSTOMER",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/roles/2"
+                    },
+                    "role": {
+                        "href": "http://localhost:8080/api/v1/roles/2"
+                    }
+                }
+            },
+            {
+                "name": "STAFF",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/roles/3"
+                    },
+                    "role": {
+                        "href": "http://localhost:8080/api/v1/roles/3"
+                    }
+                }
+            },
+            {
+                "name": "USER",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/v1/roles/4"
+                    },
+                    "role": {
+                        "href": "http://localhost:8080/api/v1/roles/4"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/api/v1/roles"
+        },
+        "profile": {
+            "href": "http://localhost:8080/api/v1/profile/roles"
+        }
+    }
+}

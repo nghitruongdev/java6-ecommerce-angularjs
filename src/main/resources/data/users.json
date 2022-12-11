@@ -1,0 +1,660 @@
+[
+  {
+    "username": "ALFKI",
+    "password": "alfki",
+    "fullname": "Maria Anders",
+    "email": "alfki@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "ANATR",
+    "password": "anatr",
+    "fullname": "Ana Trujillo",
+    "email": "anatr@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "ANTON",
+    "password": "anton",
+    "fullname": "Antonio Moreno",
+    "email": "anton@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "AROUT",
+    "password": "arout",
+    "fullname": "Thomas Hardy",
+    "email": "arout@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BERGS",
+    "password": "bergs",
+    "fullname": "Christina Berglund",
+    "email": "bergs@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BLAUS",
+    "password": "blaus",
+    "fullname": "Hanna Moos",
+    "email": "blaus@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BLONP",
+    "password": "blonp",
+    "fullname": "Frédérique Citeaux",
+    "email": "blonp@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BOLID",
+    "password": "bolid",
+    "fullname": "Martín Sommer",
+    "email": "bolid@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BONAP",
+    "password": "bonap",
+    "fullname": "Laurence Lebihan",
+    "email": "bonap@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BOTTM",
+    "password": "bottm",
+    "fullname": "Elizabeth Lincoln",
+    "email": "bottm@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "BSBEV",
+    "password": "bsbev",
+    "fullname": "Victoria Ashworth",
+    "email": "bsbev@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "CACTU",
+    "password": "cactu",
+    "fullname": "Patricio Simpson",
+    "email": "cactu@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "CENTC",
+    "password": "centc",
+    "fullname": "Francisco Chang",
+    "email": "centc@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "CHOPS",
+    "password": "chops",
+    "fullname": "Yang Wang",
+    "email": "chops@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "COMMI",
+    "password": "commi",
+    "fullname": "Pedro Afonso",
+    "email": "commi@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "CONSH",
+    "password": "consh",
+    "fullname": "Elizabeth Brown",
+    "email": "consh@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "customer",
+    "password": "123",
+    "fullname": "Nguyễn Văn Tèo",
+    "email": "teonv@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "director",
+    "password": "123",
+    "fullname": "Nguyễn Chí Phèo",
+    "email": "pheonc@fpt.edu.vn",
+    "photo": "-1407968806.jpg"
+  },
+  {
+    "username": "DRACD",
+    "password": "dracd",
+    "fullname": "Sven Ottlieb",
+    "email": "dracd@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "DUMON",
+    "password": "dumon",
+    "fullname": "Janine Labrune",
+    "email": "dumon@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "EASTC",
+    "password": "eastc",
+    "fullname": "Ann Devon",
+    "email": "eastc@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "ERNSH",
+    "password": "ernsh",
+    "fullname": "Roland Mendel",
+    "email": "ernsh@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FAMIA",
+    "password": "famia",
+    "fullname": "Aria Cruz",
+    "email": "famia@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FISSA",
+    "password": "fissa",
+    "fullname": "Diego Roel",
+    "email": "fissa@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FOLIG",
+    "password": "folig",
+    "fullname": "Martine Rancé",
+    "email": "folig@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FOLKO",
+    "password": "folko",
+    "fullname": "Maria Larsson",
+    "email": "folko@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FRANK",
+    "password": "frank",
+    "fullname": "Peter Franken",
+    "email": "frank@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FRANR",
+    "password": "franr",
+    "fullname": "Carine Schmitt",
+    "email": "franr@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FRANS",
+    "password": "frans",
+    "fullname": "Paolo Accorti",
+    "email": "frans@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "FURIB",
+    "password": "furib",
+    "fullname": "Lino Rodriguez",
+    "email": "furib@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "GALED",
+    "password": "galed",
+    "fullname": "Eduardo Saavedra",
+    "email": "galed@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "GODOS",
+    "password": "godos",
+    "fullname": "José Pedro Freyre",
+    "email": "godos@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "GOURL",
+    "password": "gourl",
+    "fullname": "André Fonseca",
+    "email": "gourl@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "GREAL",
+    "password": "greal",
+    "fullname": "Howard Snyder",
+    "email": "greal@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "GROSR",
+    "password": "grosr",
+    "fullname": "Manuel Pereira",
+    "email": "grosr@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "HANAR",
+    "password": "hanar",
+    "fullname": "Mario Pontes",
+    "email": "hanar@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "HILAA",
+    "password": "hilaa",
+    "fullname": "Carlos Hernández",
+    "email": "hilaa@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "HUNGC",
+    "password": "hungc",
+    "fullname": "Yoshi Latimer",
+    "email": "hungc@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "HUNGO",
+    "password": "hungo",
+    "fullname": "Patricia McKenna",
+    "email": "hungo@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "ISLAT",
+    "password": "islat",
+    "fullname": "Helen Bennett",
+    "email": "islat@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "KOENE",
+    "password": "koene",
+    "fullname": "Philip Cramer",
+    "email": "koene@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LACOR",
+    "password": "lacor",
+    "fullname": "Daniel Tonini",
+    "email": "lacor@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LAMAI",
+    "password": "lamai",
+    "fullname": "Annette Roulet",
+    "email": "lamai@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LAUGB",
+    "password": "laugb",
+    "fullname": "Yoshi Tannamuri",
+    "email": "laugb@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LAZYK",
+    "password": "lazyk",
+    "fullname": "John Steel",
+    "email": "lazyk@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LEHMS",
+    "password": "lehms",
+    "fullname": "Renate Messner",
+    "email": "lehms@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LETSS",
+    "password": "letss",
+    "fullname": "Jaime Yorres",
+    "email": "letss@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LILAS",
+    "password": "lilas",
+    "fullname": "Carlos González",
+    "email": "lilas@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LINOD",
+    "password": "linod",
+    "fullname": "Felipe Izquierdo",
+    "email": "linod@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "LONEP",
+    "password": "lonep",
+    "fullname": "Fran Wilson",
+    "email": "lonep@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "MAGAA",
+    "password": "magaa",
+    "fullname": "Giovanni Rovelli",
+    "email": "magaa@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "MAISD",
+    "password": "maisd",
+    "fullname": "Catherine Dewey",
+    "email": "maisd@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "MEREP",
+    "password": "merep",
+    "fullname": "Jean Fresnière",
+    "email": "merep@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "MORGK",
+    "password": "morgk",
+    "fullname": "Alexander Feuer",
+    "email": "morgk@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "NORTS",
+    "password": "norts",
+    "fullname": "Simon Crowther",
+    "email": "norts@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "OCEAN",
+    "password": "ocean",
+    "fullname": "Yvonne Moncada",
+    "email": "ocean@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "OLDWO",
+    "password": "oldwo",
+    "fullname": "Rene Phillips",
+    "email": "oldwo@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "OTTIK",
+    "password": "ottik",
+    "fullname": "Henriette Pfalzheim",
+    "email": "ottik@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "PARIS",
+    "password": "paris",
+    "fullname": "Marie Bertrand",
+    "email": "paris@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "PERIC",
+    "password": "peric",
+    "fullname": "Guillermo Fernández",
+    "email": "peric@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "PICCO",
+    "password": "picco",
+    "fullname": "Georg Pipps",
+    "email": "picco@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "PRINI",
+    "password": "prini",
+    "fullname": "Isabel de Castro",
+    "email": "prini@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "QUEDE",
+    "password": "quede",
+    "fullname": "Bernardo Batista",
+    "email": "quede@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "QUEEN",
+    "password": "queen",
+    "fullname": "Lúcia Carvalho",
+    "email": "queen@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "QUICK",
+    "password": "quick",
+    "fullname": "Horst Kloss",
+    "email": "quick@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "RANCH",
+    "password": "ranch",
+    "fullname": "Sergio Gutiérrez",
+    "email": "ranch@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "RATTC",
+    "password": "rattc",
+    "fullname": "Paula Wilson",
+    "email": "rattc@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "REGGC",
+    "password": "reggc",
+    "fullname": "Maurizio Moroni",
+    "email": "reggc@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "RICAR",
+    "password": "ricar",
+    "fullname": "Janete Limeira",
+    "email": "ricar@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "RICSU",
+    "password": "ricsu",
+    "fullname": "Michael Holz",
+    "email": "ricsu@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "ROMEY",
+    "password": "romey",
+    "fullname": "Alejandra Camino",
+    "email": "romey@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SANTG",
+    "password": "santg",
+    "fullname": "Jonas Bergulfsen",
+    "email": "santg@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SAVEA",
+    "password": "savea",
+    "fullname": "Jose Pavarotti",
+    "email": "savea@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SEVES",
+    "password": "seves",
+    "fullname": "Hari Kumar",
+    "email": "seves@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SIMOB",
+    "password": "simob",
+    "fullname": "Jytte Petersen",
+    "email": "simob@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SPECD",
+    "password": "specd",
+    "fullname": "Dominique Perrier",
+    "email": "specd@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SPLIR",
+    "password": "splir",
+    "fullname": "Art Braunschweiger",
+    "email": "splir@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "staff",
+    "password": "123",
+    "fullname": "Phạm Thị Nở",
+    "email": "nopt@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "SUPRD",
+    "password": "suprd",
+    "fullname": "Pascale Cartrain",
+    "email": "suprd@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "THEBI",
+    "password": "thebi",
+    "fullname": "Liz Nixon",
+    "email": "thebi@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "THECR",
+    "password": "thecr",
+    "fullname": "Liu Wong",
+    "email": "thecr@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "TOMSP",
+    "password": "tomsp",
+    "fullname": "Karin Josephs",
+    "email": "tomsp@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "TORTU",
+    "password": "tortu",
+    "fullname": "Miguel Angel Paolino",
+    "email": "tortu@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "TRADH",
+    "password": "tradh",
+    "fullname": "Anabela Domingues",
+    "email": "tradh@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "TRAIH",
+    "password": "traih",
+    "fullname": "Helvetius Nagy",
+    "email": "traih@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "VAFFE",
+    "password": "vaffe",
+    "fullname": "Palle Ibsen",
+    "email": "vaffe@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "VICTE",
+    "password": "victe",
+    "fullname": "Mary Saveley",
+    "email": "victe@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "VINET",
+    "password": "vinet",
+    "fullname": "Paul Henriot",
+    "email": "vinet@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "WANDK",
+    "password": "wandk",
+    "fullname": "Rita Müller",
+    "email": "wandk@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "WARTH",
+    "password": "warth",
+    "fullname": "Pirkko Koskitalo",
+    "email": "warth@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "WELLI",
+    "password": "welli",
+    "fullname": "Paula Parente",
+    "email": "welli@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "WHITC",
+    "password": "whitc",
+    "fullname": "Karl Jablonski",
+    "email": "whitc@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "WILMK",
+    "password": "wilmk",
+    "fullname": "Matti Karttunen",
+    "email": "wilmk@gmail.com",
+    "photo": "user.png"
+  },
+  {
+    "username": "WOLZA",
+    "password": "wolza",
+    "fullname": "Zbyszek Piestrzeniewicz",
+    "email": "wolza@gmail.com",
+    "photo": "user.png"
+  }
+]
