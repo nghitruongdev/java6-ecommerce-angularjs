@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{/layout/index::dynamic(~{::detail})}">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<p th:remove="all">Hello this is details page</p>
+<h2 th:utext="'Product Controller'"></h2>
+<main>
+    <div th:fragment="detail" class="col-10">
+        <div th:if="${product != null}" th:object="${product}">
+            <div class="row border rounded-2 p-2">
+                <div class="col-4">
+                    <img th:src="@{|*{images.size() > 0? images.get(0).url : ''}|}" alt=""
+                         class="card-img-top img-fluid" style="width: 18rem;">
+                </div>
+                <div class="col-6 card-body ms-4">
+                    <h3 class="card-title text-truncate" th:text="*{name}"></h3>
+                    <p class="card-text text-muted">Quantity: <span th:text="*{quantity}"></span></p>
+                    <p class="card-text text-muted fw-bold">Info Detail:</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias consequatur doloribus eaque eius inventore nihil quisquam saepe voluptatibus! Ab amet consequatur dicta ipsum iure laborum non quia ut.</p>
+
+                    <div class="text-end">
+                        <button th:attr="ng-click=@{|addToCart(*{id})|}" th:disabled="*{quantity == 0}"
+                                class="btn btn-success">Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <h3 class="mt-3">SẢN PHẨM CÙNG LOẠI</h3>
+            <div class="row">
+                <div th:each="prod, state: ${products}" th:object="${prod}" class="col-4 mt-3">
+                    <div th:replace="~{/product/product-card::product-card(${prod})}"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div th:if="${product == null}" class="alert alert-danger">OOPS, không tìm thấy sản phẩm.</div>
+    </div>
+
+</main>
+</body>
+</html>

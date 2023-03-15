@@ -2,7 +2,7 @@ server:
   port: 8090
 spring:
   application:
-    name: upload-service
+    name: upload
   datasource:
     url: jdbc:mysql://localhost:3306/java6_asm
     username: root
@@ -13,3 +13,12 @@ spring:
 imagekit:
   private-key: private_lSllqDlunGjQeknG6GPTSk38ucM=
   upload-url: https://upload.imagekit.io/api/v1/files/upload
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+logging:
+  level:
+    web: trace

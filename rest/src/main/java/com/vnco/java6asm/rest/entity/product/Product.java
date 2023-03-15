@@ -1,11 +1,10 @@
 package com.vnco.java6asm.rest.entity.product;
 
-import com.vnco.common.model.image.ProductImage;
 import com.vnco.java6asm.rest.entity.category.Category;
+import com.vnco.java6asm.rest.entity.image.ProductImage;
 import com.vnco.java6asm.rest.entity.order.OrderDetail;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.hateoas.RepresentationModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +17,7 @@ import java.util.List;
 @ToString
 @Entity
 @Table (name = "products")
-public class Product extends RepresentationModel<Product> {
+public class Product {
     @Id
     //    @GeneratedValue (
     //            strategy = GenerationType.SEQUENCE,
@@ -36,18 +35,22 @@ public class Product extends RepresentationModel<Product> {
     private Double             price;
     private Boolean            available;
     private Long               createDate;
-    @OneToMany (mappedBy = "clientId", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany (mappedBy = "clientId", cascade = CascadeType.ALL)
     @Builder.Default
     private List<ProductImage> images = new ArrayList<>();
+    @Column(name = "category_id", nullable = false, insertable = true, updatable = true)
+    private Long               categoryId;
     @ManyToOne
     @JoinColumn (
             name = "category_id",
-            referencedColumnName = "id"
+            referencedColumnName = "id",
+            insertable = false,
+            updatable = false
     )
-    private Category          category;
+    private Category           category;
     @OneToMany (mappedBy = "product")
     @ToString.Exclude
-    private List<OrderDetail> orderDetails;
+    private List<OrderDetail>  orderDetails;
     
     public void addImage(ProductImage image) {
         image.setClientId(this.getId());

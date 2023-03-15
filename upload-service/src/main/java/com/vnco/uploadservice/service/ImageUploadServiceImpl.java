@@ -5,7 +5,6 @@ import com.vnco.common.model.image.Image;
 import com.vnco.uploadservice.config.ImageKitConfig;
 import com.vnco.uploadservice.model.ImageFactory;
 import com.vnco.uploadservice.model.ImageQueue;
-import com.vnco.uploadservice.repo.ImageRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -28,9 +27,9 @@ import java.util.List;
 @Service
 @Qualifier ("imagekit")
 public class ImageUploadServiceImpl implements ImageUploadService {
-    private final RestTemplate    restTemplate;
-    private final ImageKitConfig  config;
-    private final ImageRepository imageRepository;
+    private final RestTemplate   loadBalance;
+    private final RestTemplate   template;
+    private final ImageKitConfig config;
     
     @Override
     public void upload(ImageQueue queue) {
@@ -40,7 +39,8 @@ public class ImageUploadServiceImpl implements ImageUploadService {
             Image image = upload(queue, file);
             images.add(image);
         });
-        imageRepository.saveAll(images);
+        log.info(">> Images before save: {}", images.size());
+        saveToDatabase(images);
     }
     
     private Image upload(ImageQueue queue, File file) {
@@ -53,17 +53,26 @@ public class ImageUploadServiceImpl implements ImageUploadService {
         body.add("folder", queue.folder());
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
         //
-        ResponseEntity<JsonNode> entity = restTemplate.postForEntity(config.getUploadUrl(), requestEntity,
-                                                                     JsonNode.class);
+        ResponseEntity<JsonNode> entity = template.postForEntity(config.getUploadUrl(), requestEntity,
+                                                                 JsonNode.class);
         log.info(">>Response entity: {}", entity.getHeaders());
         log.info(">>Response entity: {}", entity.getBody());
         //        ObjectNode jsonNode = new ObjectMapper().createObjectNode();
         //        jsonNode.put("fileName", file.getName());
         file.delete();
         return ImageFactory.getImage(queue, entity.getBody());
-        //        ObjectNode objectNode = new ObjectMapper().createObjectNode();
-        //        objectNode.put("fileName", file.getName());
-        //        objectNode.put("filePath", file.getPath());
-        //        return ImageFactory.getImage(queue, objectNode);
+//                ObjectNode objectNode = new ObjectMapper().createObjectNode();
+//                objectNode.put("fileName", file.getName());
+//                objectNode.put("filePath", file.getPath());
+//                return ImageFactory.getImage(queue, objectNode);
+//                return ImageFactory.getImage(queue, null);
+        
+    }
+    
+    private void saveToDatabase(List<Image> images) {
+        log.info("Images before send: {}", images);
+        String            url    = "http://rest/api/v1/images/product/saveAll";
+        ResponseEntity<?> result = loadBalance.postForEntity(url, new HttpEntity<>(images), JsonNode.class);
+        log.info(">> Saved to database: {}", result);
     }
 }

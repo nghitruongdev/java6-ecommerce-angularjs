@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--th:replace="~{/layout/index::dynamic(~{::cart-info})}"-->
+<head>
+    <link
+            rel="stylesheet"
+            href="/assets/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script
+            defer
+            src="/assets/node_modules/angular/angular.min.js"></script>
+</head>
+<body>
+<div class="btn-group" th:fragment="cart-info">
+    <button type="button" class="btn  dropdown-toggle my-dropdown-toggle position-relative mx-3"
+            data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart-fill"
+             viewBox="0 0 16 16">
+            <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg>
+        <i class="badge bg-danger position-absolute me-5">{{cart.totalQuantity}}</i>
+    </button>
+    <ul ng-if="cart.totalQuantity == 0" class="dropdown-menu dropdown-menu-end">
+        <li
+                class="dropdown-item-text text-center" style="width: 300px;">
+            <img th:src="@{/assets/images/empty-cart.png}" alt="Cart is empty." class="img-fluid"
+                 style="max-height: 250px;">
+        </li>
+    </ul>
+    <ul ng-if="cart.totalQuantity > 0" class="dropdown-menu dropdown-menu-end">
+        <li ng-repeat="prod in cart.values track by prod.id">
+            <div class="dropdown-item container">
+                <a href="/products/{{prod.id}}" class="nav-link">
+                    <div class="row" style="width: 300px;">
+                        <div class="" style="width: 100px;">
+                            <img ng-src="{{prod.images.length && prod.images[0].url}}" class="img-fluid" alt=""
+                                 style="height: 100px;">
+                        </div>
+                        <div class="col-auto">
+                            <p class="">{{prod.name}}</p>
+                            <p class="text-muted">{{prod.price | currency: 'VNĐ ' :0}} x {{prod.quantity}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--            <button class="" type="button">{{prod.name}}</button>-->
+        </li>
+        <li class="dropdown-divider"></li>
+        <li class="mt-1 mx-2 d-flex justify-content-between">
+            <p class="lead">
+                <span>Total: <br><b class="fw-bolder">{{cart.totalAmount | currency: "VNĐ "}}</b></span>
+
+            </p>
+            <a class="btn btn-success mx-2 align-self-center" href="/cart">Go to Cart</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

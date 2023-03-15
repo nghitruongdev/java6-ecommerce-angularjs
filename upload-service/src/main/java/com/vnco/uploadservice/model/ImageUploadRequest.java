@@ -1,16 +1,14 @@
 package com.vnco.uploadservice.model;
 
 import com.vnco.common.util.FileUtil;
+import jakarta.ws.rs.PathParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-public record ImageUploadRequest(String type, Long clientId, String folder, List<MultipartFile> files) {
+public record ImageUploadRequest(String type, Long clientId, String folder,
+                                 @PathParam("files") List<MultipartFile> files) {
     public ImageQueue toImageQueue() {
-        return ImageQueue.builder()
-                         .type(type)
-                         .clientId(clientId)
-                         .folder(folder)
-                         .files(FileUtil.convertToTempFile(files)).build();
+        return new ImageQueue(type, clientId, folder, FileUtil.convertToTempFile(files));
     }
 }

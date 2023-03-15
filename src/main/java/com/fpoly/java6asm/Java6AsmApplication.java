@@ -3,13 +3,13 @@ package com.fpoly.java6asm;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @Slf4j
-@EntityScan (basePackages = {"com.vnco.common.model", "com.fpoly.java6asm.rest.entity"})
+//@EntityScan (basePackages = {"com.vnco.common.model", "com.fpoly.java6asm.rest.entity", "com.fpoly"})
 @Controller
 public class Java6AsmApplication {
     
@@ -17,9 +17,8 @@ public class Java6AsmApplication {
         SpringApplication.run(Java6AsmApplication.class, args);
     }
     
-    @RequestMapping("/")
-    public String index() {
-        log.info(">> Opening index page");
-        return "forward:/products";
+    @Bean
+    RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }

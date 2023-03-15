@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{/layout/index::dynamic(~{::main})}">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <div th:fragment="main" ng-controller="order-ctrl" class="col-10 mx-auto">
+        <div class="order-detail-container mb-3" ng-if="order">
+            <div class="card mb-3" style="width: 18rem;">
+                <!--            <img src="" class="card-img-top" alt="...">-->
+                <div class="card-body">
+                    <h5 class="card-title">OrderID: #<span>{{order.id}}</span></h5>
+                    <p class="card-text">Order time:
+                        <time>{{order.createTime | date: 'hh:mm dd-MM-yyyy'}}</time>
+                    </p>
+                    <p class="card-text">Total amount: <span>{{order.amount | currency: 'VNĐ '}}</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Order Details</h3>
+                    <table class="table table-border table-hover">
+                        <thead class="table-primary">
+                        <tr>
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="dt in order.orderDetails">
+                            <td>{{dt.id}}</td>
+                            <td><img ng-src="{{dt.product.images.length && dt.product.images[0].url}}" alt="{{dt.product.name}}" style="width: 100px;"></td>
+                            <td><span></span>{{dt.product.name}}</td>
+                            <td><span class="text-muted"></span>{{dt.price | number: 2}}</td>
+                            <td><span class="text-muted"></span>{{dt.quantity}}</td>
+                            <td><span class="text-muted"></span>{{dt.price * dt.quantity | number: 2}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="order-list-container" ng-if="orders.length">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Your Order History</h3>
+                    <table class="table">
+                        <thead class="table-success">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Receipien's name</th>
+                            <th>Amount</th>
+                            <th>Ordered Date</th>
+                            <th>Link</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="od in orders track by od.id">
+                            <td>{{od.id}}</td>
+                            <td>{{od.fullName}}</td>
+                            <td>{{od.amount | currency: 'VNĐ '}}</td>
+                            <td>{{od.createTime | date: 'dd-MM-yyyy'}}</td>
+                            <td><a href="#" ng-click="viewDetail(od.id)">View</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div ng-if="!orders.length">
+            <h2 class="alert alert-danger">YOUR ORDER HISTORY IS EMPTY!</h2>
+        </div>
+        <script th:inline="javascript">
+            const order = [[${order}]]
+            const username = [[${remoteUser}]]
+            console.log(order)
+        </script>
+    </div>
+
+</main>
+</body>
+</html>

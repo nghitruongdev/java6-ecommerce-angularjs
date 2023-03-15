@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -52,13 +51,13 @@ public class ProductController {
     @GetMapping ("{id}")
     public String details(@PathVariable ("id") Long id, Model model) {
         Product product = productService.getById(id);
-        Page<Product> productsByCategory = productService.getAllByCategoryId(product.getCategory().getId(),
-                                                                             PageRequest.of(0, 13));
-        List<Product> relevantProducts =
-                productsByCategory.stream()
-                                  .dropWhile(product1 -> product1.getId().equals(id)).toList();
-        model.addAttribute("product", product);
-        model.addAttribute("products", relevantProducts);
+//        Page<Product> productsByCategory = productService.getAllByCategoryId(product.getCategory().getId(),
+//                                                                             PageRequest.of(0, 13));
+//        List<Product> relevantProducts =
+//                productsByCategory.stream()
+//                                  .dropWhile(product1 -> product1.getId().equals(id)).toList();
+//        model.addAttribute("product", product);
+//        model.addAttribute("products", relevantProducts);
         return Constant.PRODUCT_DETAIL_PAGE;
     }
     

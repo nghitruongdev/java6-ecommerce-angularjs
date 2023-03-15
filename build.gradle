@@ -1,8 +1,7 @@
 
 plugins {
-    id "war"
-    id "org.springframework.boot" version "3.0.0"
-//    id "io.spring.dependency-management" version "1.1.0"
+    id 'java'
+    id "org.springframework.boot" version "3.0.0" apply false
 }
 
 group = "com.fpoly"
@@ -12,17 +11,20 @@ ext {
     mapstructVersion = "1.5.3.Final"
     mapstructSpringExtensionsVersion = "0.1.2"
 }
+sourceCompatibility = "17"
 
 
 allprojects {
+//    ext {
+//        set('springCloudVersion', "2021.0.5")
+//    }
     ext {
-        set('springCloudVersion', "2021.0.5")
+        set('springCloudVersion', "2022.0.0-RC2")
     }
-
-    sourceCompatibility = "17"
-
     repositories {
         mavenCentral()
+        maven { url 'https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates' }
+        maven { url 'https://repo.spring.io/milestone' }
     }
 
     apply plugin: 'java'
@@ -47,7 +49,9 @@ allprojects {
         annotationProcessor "org.projectlombok:lombok"
         developmentOnly "org.springframework.boot:spring-boot-devtools"
         annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+        implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
         testImplementation "org.springframework.boot:spring-boot-starter-test"
+
     }
 
     tasks.named("test") {
@@ -56,25 +60,4 @@ allprojects {
 }
 
 dependencies {
-    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
-    implementation "org.springframework.boot:spring-boot-starter-data-rest"
-    implementation "org.springframework.boot:spring-boot-starter-oauth2-client"
-    implementation "org.springframework.boot:spring-boot-starter-security"
-    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
-    implementation "org.springframework.boot:spring-boot-starter-web"
-    runtimeOnly "com.h2database:h2"
-    runtimeOnly "com.mysql:mysql-connector-j"
-    providedRuntime "org.springframework.boot:spring-boot-starter-tomcat"
-    testImplementation "org.springframework.security:spring-security-test"
-    implementation('com.github.javafaker:javafaker:1.0.2') {
-        exclude group: 'org.yaml', module: 'snakeyaml'
-    }
-
-    implementation project(':common')
-    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
-    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-    implementation "org.mapstruct.extensions.spring:mapstruct-spring-annotations:${mapstructSpringExtensionsVersion}"
-    annotationProcessor "org.mapstruct.extensions.spring:mapstruct-spring-extensions:${mapstructSpringExtensionsVersion}"
-    // If you are using MapStruct Spring Extensions in test code
-    testAnnotationProcessor "org.mapstruct.extensions.spring:mapstruct-spring-extensions:${mapstructSpringExtensionsVersion}"
 }

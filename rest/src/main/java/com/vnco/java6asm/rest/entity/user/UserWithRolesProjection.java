@@ -11,6 +11,7 @@ import java.util.Set;
 public interface UserWithRolesProjection {
     String getUsername();
     
+    String getPassword();
     String getFullName();
     
     String getEmail();

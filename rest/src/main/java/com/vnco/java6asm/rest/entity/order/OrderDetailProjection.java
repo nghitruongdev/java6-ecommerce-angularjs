@@ -1,7 +1,10 @@
 package com.vnco.java6asm.rest.entity.order;
 
+import com.vnco.java6asm.rest.entity.image.ProductImage;
 import com.vnco.java6asm.rest.entity.product.Product;
 import org.springframework.data.rest.core.config.Projection;
+
+import java.util.List;
 
 /**
  * A Projection for the {@link OrderDetail} entity
@@ -26,7 +29,6 @@ public interface OrderDetailProjection {
         Integer getQuantity();
         
         Double getPrice();
-        
-        String getImage();
+        List<ProductImage> getImages();
     }
 }

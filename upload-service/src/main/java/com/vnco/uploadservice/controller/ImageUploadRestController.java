@@ -23,7 +23,7 @@ public class ImageUploadRestController {
     @Autowired
     private ImageUploadService imageService;
     
-    @PostMapping ("/rest/images/")
+    @PostMapping ("/rest/images")
     public ResponseEntity<?> upload(ImageUploadRequest request) {
         log.info("Received files from controllers");
         imageService.queue(request.toImageQueue());
